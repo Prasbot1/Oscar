@@ -851,8 +851,8 @@ module.exports = {
                             pp = await this.profilePictureUrl(user)
                         } catch (e) {
                         } finally {
-                            text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc.toString()) :
-                                (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
+                            text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Yahh,BEBANYA Nambah Deh Selamat Join Wahai beban @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc.toString()) :
+                                (chat.sBye || this.bye || conn.bye || 'Akhirnya,Beban Out Juga @user!')).replace('@user', '@' + user.split('@')[0])
                             this.sendFile(id, pp, 'pp.jpg', text, null, false, { mentions: [user] })
                         }
                     }
